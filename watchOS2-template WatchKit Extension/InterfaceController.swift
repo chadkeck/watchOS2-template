@@ -8,6 +8,7 @@
 
 import WatchKit
 import Foundation
+import Alamofire
 
 
 class InterfaceController: WKInterfaceController {
@@ -21,6 +22,18 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+
+        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["platform": "watchOS"])
+            .responseJSON { response in
+                print(response.request)  // original URL request
+                print(response.response) // URL response
+                print(response.data)     // server data
+                print(response.result)   // result of response serialization
+
+                if let JSON = response.result.value {
+                    print("JSON: \(JSON)")
+                }
+        }
     }
 
     override func didDeactivate() {

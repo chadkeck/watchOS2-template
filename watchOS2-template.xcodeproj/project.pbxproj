@@ -24,6 +24,10 @@
 		1BA0EF861C309C770020FAF8 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0EF851C309C770020FAF8 /* GlanceController.swift */; };
 		1BA0EF881C309C770020FAF8 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0EF871C309C770020FAF8 /* ComplicationController.swift */; };
 		1BA0EF8A1C309C770020FAF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0EF891C309C770020FAF8 /* Assets.xcassets */; };
+		1BA0EFAC1C30A11E0020FAF8 /* Alamofire.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BA0EFAB1C30A11E0020FAF8 /* Alamofire.framework.dSYM */; };
+		1BA0EFAE1C30A13B0020FAF8 /* Alamofire.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BA0EFAD1C30A13B0020FAF8 /* Alamofire.framework.dSYM */; };
+		1BA0EFB31C30A2910020FAF8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA0EFAF1C30A2760020FAF8 /* Alamofire.framework */; };
+		1BA0EFB51C30A2A90020FAF8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA0EFB41C30A2A90020FAF8 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,26 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1BA0EFA41C309ED10020FAF8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				1BA0EFAE1C30A13B0020FAF8 /* Alamofire.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA0EFAA1C30A0E30020FAF8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				1BA0EFAC1C30A11E0020FAF8 /* Alamofire.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +133,10 @@
 		1BA0EF871C309C770020FAF8 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		1BA0EF891C309C770020FAF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BA0EF8B1C309C770020FAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA0EFAB1C30A11E0020FAF8 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/watchOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		1BA0EFAD1C30A13B0020FAF8 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		1BA0EFAF1C30A2760020FAF8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
+		1BA0EFB41C30A2A90020FAF8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA0EFB51C30A2A90020FAF8 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA0EFB31C30A2910020FAF8 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +176,10 @@
 		1BA0EF381C309C770020FAF8 = {
 			isa = PBXGroup;
 			children = (
+				1BA0EFB41C30A2A90020FAF8 /* Alamofire.framework */,
+				1BA0EFAF1C30A2760020FAF8 /* Alamofire.framework */,
+				1BA0EFAD1C30A13B0020FAF8 /* Alamofire.framework.dSYM */,
+				1BA0EFAB1C30A11E0020FAF8 /* Alamofire.framework.dSYM */,
 				1BA0EF431C309C770020FAF8 /* watchOS2-template */,
 				1BA0EF581C309C770020FAF8 /* watchOS2-templateTests */,
 				1BA0EF631C309C770020FAF8 /* watchOS2-templateUITests */,
@@ -242,6 +276,8 @@
 				1BA0EF3E1C309C770020FAF8 /* Frameworks */,
 				1BA0EF3F1C309C770020FAF8 /* Resources */,
 				1BA0EF951C309C770020FAF8 /* Embed Watch Content */,
+				1BA0EFA31C309E7A0020FAF8 /* ShellScript */,
+				1BA0EFA41C309ED10020FAF8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -313,6 +349,8 @@
 				1BA0EF741C309C770020FAF8 /* Sources */,
 				1BA0EF751C309C770020FAF8 /* Frameworks */,
 				1BA0EF761C309C770020FAF8 /* Resources */,
+				1BA0EFA91C30A09E0020FAF8 /* ShellScript */,
+				1BA0EFAA1C30A0E30020FAF8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -417,6 +455,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BA0EFA31C309E7A0020FAF8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		1BA0EFA91C30A09E0020FAF8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/watchOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1BA0EF3D1C309C770020FAF8 /* Sources */ = {
@@ -596,6 +665,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "watchOS2-template WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chadbibler.watchOS2-template.watchkitapp.watchkitextension";
@@ -611,6 +684,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "watchOS2-template WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chadbibler.watchOS2-template.watchkitapp.watchkitextension";
@@ -658,6 +735,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "watchOS2-template/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chadbibler.watchOS2-template";
@@ -669,6 +751,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "watchOS2-template/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chadbibler.watchOS2-template";
@@ -743,6 +830,7 @@
 				1BA0EF901C309C770020FAF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BA0EF921C309C770020FAF8 /* Build configuration list for PBXNativeTarget "watchOS2-template WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -751,6 +839,7 @@
 				1BA0EF941C309C770020FAF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BA0EF961C309C770020FAF8 /* Build configuration list for PBXNativeTarget "watchOS2-template" */ = {
 			isa = XCConfigurationList;
@@ -759,6 +848,7 @@
 				1BA0EF981C309C770020FAF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BA0EF991C309C770020FAF8 /* Build configuration list for PBXNativeTarget "watchOS2-templateTests" */ = {
 			isa = XCConfigurationList;
@@ -767,6 +857,7 @@
 				1BA0EF9B1C309C770020FAF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BA0EF9C1C309C770020FAF8 /* Build configuration list for PBXNativeTarget "watchOS2-templateUITests" */ = {
 			isa = XCConfigurationList;
@@ -775,6 +866,7 @@
 				1BA0EF9E1C309C770020FAF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
