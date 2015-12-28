@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import ObjectMapper
 
 class ViewController: UIViewController {
 
@@ -24,16 +25,17 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
 
-        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["platform": "iOS"])
-            .responseJSON { response in
-                print(response.request)  // original URL request
-                print(response.response) // URL response
-                print(response.data)     // server data
-                print(response.result)   // result of response serialization
+        let URL = "https://raw.githubusercontent.com/tristanhimmelman/AlamofireObjectMapper/d8bb95982be8a11a2308e779bb9a9707ebe42ede/sample_json"
+        Alamofire.request(.GET, URL).responseJSON { response in
+            let weatherResponse = Mapper<WeatherResponse>().map(response.result.value)
 
-                if let JSON = response.result.value {
-                    print("JSON: \(JSON)")
+            if let threeDayForecast = weatherResponse?.threeDayForecast {
+                for forecast in threeDayForecast {
+                    print(forecast.day)
+                    print(forecast.temperature)
                 }
+            }
+
         }
     }
 

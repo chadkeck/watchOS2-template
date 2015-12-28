@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B5C69CD1C316A2D0035E404 /* ObjectMapper.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1B5C69CC1C316A2D0035E404 /* ObjectMapper.framework.dSYM */; };
+		1B5C69D01C316C1B0035E404 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5C69CF1C316C1B0035E404 /* WeatherResponse.swift */; };
+		1B5C69D11C316C1B0035E404 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5C69CF1C316C1B0035E404 /* WeatherResponse.swift */; };
 		1BA0EF451C309C770020FAF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0EF441C309C770020FAF8 /* AppDelegate.swift */; };
 		1BA0EF471C309C770020FAF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0EF461C309C770020FAF8 /* ViewController.swift */; };
 		1BA0EF4A1C309C770020FAF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0EF481C309C770020FAF8 /* Main.storyboard */; };
@@ -28,6 +31,8 @@
 		1BA0EFAE1C30A13B0020FAF8 /* Alamofire.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BA0EFAD1C30A13B0020FAF8 /* Alamofire.framework.dSYM */; };
 		1BA0EFB31C30A2910020FAF8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA0EFAF1C30A2760020FAF8 /* Alamofire.framework */; };
 		1BA0EFB51C30A2A90020FAF8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA0EFB41C30A2A90020FAF8 /* Alamofire.framework */; };
+		1BA0EFBB1C30B7A00020FAF8 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA0EFBA1C30B7A00020FAF8 /* ObjectMapper.framework */; };
+		1BA0EFBD1C30B7D20020FAF8 /* ObjectMapper.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BA0EFBC1C30B7D20020FAF8 /* ObjectMapper.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +95,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				1BA0EFBD1C30B7D20020FAF8 /* ObjectMapper.framework.dSYM in CopyFiles */,
 				1BA0EFAE1C30A13B0020FAF8 /* Alamofire.framework.dSYM in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +106,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				1B5C69CD1C316A2D0035E404 /* ObjectMapper.framework.dSYM in CopyFiles */,
 				1BA0EFAC1C30A11E0020FAF8 /* Alamofire.framework.dSYM in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +114,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B5C69CC1C316A2D0035E404 /* ObjectMapper.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ObjectMapper.framework.dSYM; path = Carthage/Build/watchOS/ObjectMapper.framework.dSYM; sourceTree = "<group>"; };
+		1B5C69CF1C316C1B0035E404 /* WeatherResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherResponse.swift; path = Common/WeatherResponse.swift; sourceTree = "<group>"; };
 		1BA0EF411C309C770020FAF8 /* watchOS2-template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchOS2-template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA0EF441C309C770020FAF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BA0EF461C309C770020FAF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +146,8 @@
 		1BA0EFAD1C30A13B0020FAF8 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
 		1BA0EFAF1C30A2760020FAF8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
 		1BA0EFB41C30A2A90020FAF8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		1BA0EFBA1C30B7A00020FAF8 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		1BA0EFBC1C30B7D20020FAF8 /* ObjectMapper.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ObjectMapper.framework.dSYM; path = Carthage/Build/iOS/ObjectMapper.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA0EFBB1C30B7A00020FAF8 /* ObjectMapper.framework in Frameworks */,
 				1BA0EFB51C30A2A90020FAF8 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,13 +185,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1BA0EF381C309C770020FAF8 = {
+		1B5C69CE1C316ABE0035E404 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B5C69CC1C316A2D0035E404 /* ObjectMapper.framework.dSYM */,
+				1BA0EFBC1C30B7D20020FAF8 /* ObjectMapper.framework.dSYM */,
+				1BA0EFBA1C30B7A00020FAF8 /* ObjectMapper.framework */,
 				1BA0EFB41C30A2A90020FAF8 /* Alamofire.framework */,
 				1BA0EFAF1C30A2760020FAF8 /* Alamofire.framework */,
 				1BA0EFAD1C30A13B0020FAF8 /* Alamofire.framework.dSYM */,
 				1BA0EFAB1C30A11E0020FAF8 /* Alamofire.framework.dSYM */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BA0EF381C309C770020FAF8 = {
+			isa = PBXGroup;
+			children = (
+				1BA0EFB61C30B7220020FAF8 /* Common */,
+				1B5C69CE1C316ABE0035E404 /* Frameworks */,
 				1BA0EF431C309C770020FAF8 /* watchOS2-template */,
 				1BA0EF581C309C770020FAF8 /* watchOS2-templateTests */,
 				1BA0EF631C309C770020FAF8 /* watchOS2-templateUITests */,
@@ -263,6 +287,14 @@
 				1BA0EF7E1C309C770020FAF8 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1BA0EFB61C30B7220020FAF8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1B5C69CF1C316C1B0035E404 /* WeatherResponse.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -464,6 +496,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 			);
 			outputPaths = (
 			);
@@ -478,6 +511,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/watchOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/watchOS/ObjectMapper.framework",
 			);
 			outputPaths = (
 			);
@@ -494,6 +528,7 @@
 			files = (
 				1BA0EF471C309C770020FAF8 /* ViewController.swift in Sources */,
 				1BA0EF451C309C770020FAF8 /* AppDelegate.swift in Sources */,
+				1B5C69D01C316C1B0035E404 /* WeatherResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +554,7 @@
 			files = (
 				1BA0EF841C309C770020FAF8 /* NotificationController.swift in Sources */,
 				1BA0EF821C309C770020FAF8 /* ExtensionDelegate.swift in Sources */,
+				1B5C69D11C316C1B0035E404 /* WeatherResponse.swift in Sources */,
 				1BA0EF881C309C770020FAF8 /* ComplicationController.swift in Sources */,
 				1BA0EF801C309C770020FAF8 /* InterfaceController.swift in Sources */,
 				1BA0EF861C309C770020FAF8 /* GlanceController.swift in Sources */,

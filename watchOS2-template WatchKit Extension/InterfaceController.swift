@@ -9,7 +9,7 @@
 import WatchKit
 import Foundation
 import Alamofire
-
+import ObjectMapper
 
 class InterfaceController: WKInterfaceController {
 
@@ -23,16 +23,16 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
 
-        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["platform": "watchOS"])
-            .responseJSON { response in
-                print(response.request)  // original URL request
-                print(response.response) // URL response
-                print(response.data)     // server data
-                print(response.result)   // result of response serialization
+        let URL = "https://raw.githubusercontent.com/tristanhimmelman/AlamofireObjectMapper/d8bb95982be8a11a2308e779bb9a9707ebe42ede/sample_json"
+        Alamofire.request(.GET, URL).responseJSON { response in
+            let weatherResponse = Mapper<WeatherResponse>().map(response.result.value)
 
-                if let JSON = response.result.value {
-                    print("JSON: \(JSON)")
+            if let threeDayForecast = weatherResponse?.threeDayForecast {
+                for forecast in threeDayForecast {
+                    print(forecast.day)
+                    print(forecast.temperature)
                 }
+            }
         }
     }
 
