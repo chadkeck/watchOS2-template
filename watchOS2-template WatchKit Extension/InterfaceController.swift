@@ -7,32 +7,30 @@
 //
 
 import WatchKit
+import WatchConnectivity
 import Foundation
-import Alamofire
-import ObjectMapper
 
-class InterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController, WCSessionDelegate {
+    @IBOutlet var reachabilityStatusLabel: WKInterfaceLabel!
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+
+        if WCSession.isSupported() {
+            let session = WCSession.defaultSession()
+            session.delegate = self
+            session.activateSession()
+        }
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
 
-        let URL = "https://raw.githubusercontent.com/tristanhimmelman/AlamofireObjectMapper/d8bb95982be8a11a2308e779bb9a9707ebe42ede/sample_json"
-        Alamofire.request(.GET, URL).responseJSON { response in
-            let weatherResponse = Mapper<WeatherResponse>().map(response.result.value)
-
-            if let threeDayForecast = weatherResponse?.threeDayForecast {
-                for forecast in threeDayForecast {
-                    print(forecast.day)
-                    print(forecast.temperature)
-                }
-            }
+        if WCSession.isSupported() {
+            sessionReachabilityDidChange(WCSession.defaultSession())
         }
     }
 
@@ -41,4 +39,15 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    func sessionReachabilityDidChange(session: WCSession) {
+        if session.reachable {
+            reachabilityStatusLabel.setText("Reachable")
+        } else {
+            if session.iOSDeviceNeedsUnlockAfterRebootForReachability {
+                reachabilityStatusLabel.setText("iPhone is locked")
+            } else {
+                reachabilityStatusLabel.setText("Unreachable")
+            }
+        }
+    }
 }
