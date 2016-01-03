@@ -14,6 +14,7 @@ A starting point for watchOS 2 projects.
 
 * [Alamofire](https://github.com/Carthage/Carthage) for iOS and watchOS networking.
 * [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper) for mapping JSON to objects.
+* [SwiftDate](https://github.com/malcommac/SwiftDate) for date helpers.
 
 ## Building
 
