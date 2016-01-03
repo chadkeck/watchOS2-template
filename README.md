@@ -4,6 +4,8 @@
 
 A starting point for watchOS 2 projects.
 
+[![License](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat)](LICENSE)
+
 ## Built With
 
 * Xcode 7.2
