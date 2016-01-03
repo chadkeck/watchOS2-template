@@ -21,7 +21,6 @@ A starting point for watchOS 2 projects.
 ### Prerequisites
 
 * Xcode 7
-* [Homebrew](http://brew.sh)
 * [Carthage](https://github.com/Carthage/Carthage) for framework dependency management.
 
 ### Install Dependencies
