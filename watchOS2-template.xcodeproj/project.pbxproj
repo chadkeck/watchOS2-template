@@ -35,6 +35,7 @@
 		1BA0EFBD1C30B7D20020FAF8 /* ObjectMapper.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BA0EFBC1C30B7D20020FAF8 /* ObjectMapper.framework.dSYM */; };
 		1BA2F9611C39828300C51F5C /* SwiftDate.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BA2F9601C39828300C51F5C /* SwiftDate.framework.dSYM */; };
 		1BA2F9651C39836900C51F5C /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA2F9641C39836900C51F5C /* SwiftDate.framework */; };
+		1BA2F96A1C3984EC00C51F5C /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA2F9681C3984EC00C51F5C /* ObjectMapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +154,7 @@
 		1BA0EFBC1C30B7D20020FAF8 /* ObjectMapper.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ObjectMapper.framework.dSYM; path = Carthage/Build/iOS/ObjectMapper.framework.dSYM; sourceTree = "<group>"; };
 		1BA2F9601C39828300C51F5C /* SwiftDate.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftDate.framework.dSYM; path = Carthage/Build/iOS/SwiftDate.framework.dSYM; sourceTree = "<group>"; };
 		1BA2F9641C39836900C51F5C /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDate.framework; path = Carthage/Build/iOS/SwiftDate.framework; sourceTree = "<group>"; };
+		1BA2F9681C3984EC00C51F5C /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/watchOS/ObjectMapper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA2F96A1C3984EC00C51F5C /* ObjectMapper.framework in Frameworks */,
 				1BA0EFB31C30A2910020FAF8 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,15 +197,8 @@
 		1B5C69CE1C316ABE0035E404 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1BA2F9641C39836900C51F5C /* SwiftDate.framework */,
-				1BA2F9601C39828300C51F5C /* SwiftDate.framework.dSYM */,
-				1B5C69CC1C316A2D0035E404 /* ObjectMapper.framework.dSYM */,
-				1BA0EFBC1C30B7D20020FAF8 /* ObjectMapper.framework.dSYM */,
-				1BA0EFBA1C30B7A00020FAF8 /* ObjectMapper.framework */,
-				1BA0EFB41C30A2A90020FAF8 /* Alamofire.framework */,
-				1BA0EFAF1C30A2760020FAF8 /* Alamofire.framework */,
-				1BA0EFAD1C30A13B0020FAF8 /* Alamofire.framework.dSYM */,
-				1BA0EFAB1C30A11E0020FAF8 /* Alamofire.framework.dSYM */,
+				1BA2F9661C3983B900C51F5C /* iOS */,
+				1BA2F9671C3983E300C51F5C /* watchOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -303,6 +299,30 @@
 				1B5C69CF1C316C1B0035E404 /* WeatherResponse.swift */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		1BA2F9661C3983B900C51F5C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1BA0EFB41C30A2A90020FAF8 /* Alamofire.framework */,
+				1BA0EFAD1C30A13B0020FAF8 /* Alamofire.framework.dSYM */,
+				1BA0EFBA1C30B7A00020FAF8 /* ObjectMapper.framework */,
+				1BA0EFBC1C30B7D20020FAF8 /* ObjectMapper.framework.dSYM */,
+				1BA2F9641C39836900C51F5C /* SwiftDate.framework */,
+				1BA2F9601C39828300C51F5C /* SwiftDate.framework.dSYM */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1BA2F9671C3983E300C51F5C /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				1BA0EFAF1C30A2760020FAF8 /* Alamofire.framework */,
+				1BA0EFAB1C30A11E0020FAF8 /* Alamofire.framework.dSYM */,
+				1BA2F9681C3984EC00C51F5C /* ObjectMapper.framework */,
+				1B5C69CC1C316A2D0035E404 /* ObjectMapper.framework.dSYM */,
+			);
+			name = watchOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
