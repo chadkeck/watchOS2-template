@@ -36,6 +36,7 @@
 		1BA2F9611C39828300C51F5C /* SwiftDate.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BA2F9601C39828300C51F5C /* SwiftDate.framework.dSYM */; };
 		1BA2F9651C39836900C51F5C /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA2F9641C39836900C51F5C /* SwiftDate.framework */; };
 		1BA2F96A1C3984EC00C51F5C /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA2F9681C3984EC00C51F5C /* ObjectMapper.framework */; };
+		1BA2F96C1C39A2E000C51F5C /* ComplicationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA2F96B1C39A2E000C51F5C /* ComplicationProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +156,7 @@
 		1BA2F9601C39828300C51F5C /* SwiftDate.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftDate.framework.dSYM; path = Carthage/Build/iOS/SwiftDate.framework.dSYM; sourceTree = "<group>"; };
 		1BA2F9641C39836900C51F5C /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDate.framework; path = Carthage/Build/iOS/SwiftDate.framework; sourceTree = "<group>"; };
 		1BA2F9681C3984EC00C51F5C /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/watchOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		1BA2F96B1C39A2E000C51F5C /* ComplicationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +280,7 @@
 				1BA0EF831C309C770020FAF8 /* NotificationController.swift */,
 				1BA0EF851C309C770020FAF8 /* GlanceController.swift */,
 				1BA0EF871C309C770020FAF8 /* ComplicationController.swift */,
+				1BA2F96B1C39A2E000C51F5C /* ComplicationProvider.swift */,
 				1BA0EF891C309C770020FAF8 /* Assets.xcassets */,
 				1BA0EF8B1C309C770020FAF8 /* Info.plist */,
 				1BA0EF7D1C309C770020FAF8 /* Supporting Files */,
@@ -584,6 +587,7 @@
 				1BA0EF841C309C770020FAF8 /* NotificationController.swift in Sources */,
 				1BA0EF821C309C770020FAF8 /* ExtensionDelegate.swift in Sources */,
 				1B5C69D11C316C1B0035E404 /* WeatherResponse.swift in Sources */,
+				1BA2F96C1C39A2E000C51F5C /* ComplicationProvider.swift in Sources */,
 				1BA0EF881C309C770020FAF8 /* ComplicationController.swift in Sources */,
 				1BA0EF801C309C770020FAF8 /* InterfaceController.swift in Sources */,
 				1BA0EF861C309C770020FAF8 /* GlanceController.swift in Sources */,
