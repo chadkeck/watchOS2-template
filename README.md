@@ -30,4 +30,4 @@ A starting point for watchOS 2 projects.
 
 ## License
 
-MIT. See [License.md](License.md) for details.
+MIT. See [LICENSE](LICENSE) for details.
