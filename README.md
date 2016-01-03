@@ -1,5 +1,7 @@
 # watchOS2 Template
 
+![App Icon](https://github.com/chadkeck/watchOS2-template/raw/master/assets/README-icon.png "App Icon")
+
 A starting point for watchOS 2 projects.
 
 ## Built With
