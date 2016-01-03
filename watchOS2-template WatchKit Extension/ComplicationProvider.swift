@@ -1,11 +1,3 @@
-//
-//  ComplicationProvider.swift
-//  watchOS2-template
-//
-//  Created by Chad Bibler on 1/3/16.
-//  Copyright © 2016 Chad Bibler. All rights reserved.
-//
-
 import ClockKit
 
 struct ComplicationProvider {

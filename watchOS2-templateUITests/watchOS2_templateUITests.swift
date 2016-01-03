@@ -1,11 +1,3 @@
-//
-//  watchOS2_templateUITests.swift
-//  watchOS2-templateUITests
-//
-//  Created by Chad Bibler on 12/27/15.
-//  Copyright © 2015 Chad Bibler. All rights reserved.
-//
-
 import XCTest
 
 class watchOS2_templateUITests: XCTestCase {

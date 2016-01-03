@@ -1,11 +1,3 @@
-//
-//  watchOS2_templateTests.swift
-//  watchOS2-templateTests
-//
-//  Created by Chad Bibler on 12/27/15.
-//  Copyright © 2015 Chad Bibler. All rights reserved.
-//
-
 import XCTest
 @testable import watchOS2_template
 

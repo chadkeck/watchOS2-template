@@ -1,13 +1,4 @@
-//
-//  ComplicationController.swift
-//  watchOS2-template WatchKit Extension
-//
-//  Created by Chad Bibler on 12/27/15.
-//  Copyright © 2015 Chad Bibler. All rights reserved.
-//
-
 import ClockKit
-
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
     let provider = ComplicationProvider()
