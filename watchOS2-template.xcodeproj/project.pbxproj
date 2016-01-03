@@ -33,6 +33,8 @@
 		1BA0EFB51C30A2A90020FAF8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA0EFB41C30A2A90020FAF8 /* Alamofire.framework */; };
 		1BA0EFBB1C30B7A00020FAF8 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA0EFBA1C30B7A00020FAF8 /* ObjectMapper.framework */; };
 		1BA0EFBD1C30B7D20020FAF8 /* ObjectMapper.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BA0EFBC1C30B7D20020FAF8 /* ObjectMapper.framework.dSYM */; };
+		1BA2F9611C39828300C51F5C /* SwiftDate.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1BA2F9601C39828300C51F5C /* SwiftDate.framework.dSYM */; };
+		1BA2F9651C39836900C51F5C /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA2F9641C39836900C51F5C /* SwiftDate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				1BA2F9611C39828300C51F5C /* SwiftDate.framework.dSYM in CopyFiles */,
 				1BA0EFBD1C30B7D20020FAF8 /* ObjectMapper.framework.dSYM in CopyFiles */,
 				1BA0EFAE1C30A13B0020FAF8 /* Alamofire.framework.dSYM in CopyFiles */,
 			);
@@ -148,6 +151,8 @@
 		1BA0EFB41C30A2A90020FAF8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		1BA0EFBA1C30B7A00020FAF8 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		1BA0EFBC1C30B7D20020FAF8 /* ObjectMapper.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ObjectMapper.framework.dSYM; path = Carthage/Build/iOS/ObjectMapper.framework.dSYM; sourceTree = "<group>"; };
+		1BA2F9601C39828300C51F5C /* SwiftDate.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftDate.framework.dSYM; path = Carthage/Build/iOS/SwiftDate.framework.dSYM; sourceTree = "<group>"; };
+		1BA2F9641C39836900C51F5C /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDate.framework; path = Carthage/Build/iOS/SwiftDate.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA2F9651C39836900C51F5C /* SwiftDate.framework in Frameworks */,
 				1BA0EFBB1C30B7A00020FAF8 /* ObjectMapper.framework in Frameworks */,
 				1BA0EFB51C30A2A90020FAF8 /* Alamofire.framework in Frameworks */,
 			);
@@ -188,6 +194,8 @@
 		1B5C69CE1C316ABE0035E404 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1BA2F9641C39836900C51F5C /* SwiftDate.framework */,
+				1BA2F9601C39828300C51F5C /* SwiftDate.framework.dSYM */,
 				1B5C69CC1C316A2D0035E404 /* ObjectMapper.framework.dSYM */,
 				1BA0EFBC1C30B7D20020FAF8 /* ObjectMapper.framework.dSYM */,
 				1BA0EFBA1C30B7A00020FAF8 /* ObjectMapper.framework */,
@@ -497,6 +505,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftDate.framework",
 			);
 			outputPaths = (
 			);
