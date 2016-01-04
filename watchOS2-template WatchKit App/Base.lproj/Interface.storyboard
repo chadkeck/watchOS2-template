@@ -15,8 +15,24 @@
                                 <label alignment="center" verticalAlignment="center" text="iPhone is locked" id="rtL-2n-Awi"/>
                             </items>
                         </group>
+                        <group width="1" alignment="left" verticalAlignment="bottom" layout="vertical" id="u9a-dO-F7F">
+                            <items>
+                                <group width="1" alignment="left" id="mp4-Gi-olj">
+                                    <items>
+                                        <label alignment="left" text="Complications:" id="eaN-xW-01g"/>
+                                        <label alignment="right" id="CYu-dd-4FU"/>
+                                    </items>
+                                </group>
+                                <button width="1" alignment="left" verticalAlignment="bottom" title="Reset Complications" id="ncO-io-qeG">
+                                    <connections>
+                                        <action selector="onResetComplicationsTapped" destination="AgC-eL-Hgc" id="IMe-uB-dqS"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
                     <connections>
+                        <outlet property="complicationCountLabel" destination="CYu-dd-4FU" id="5uY-z5-PaS"/>
                         <outlet property="reachabilityStatusLabel" destination="rtL-2n-Awi" id="MaT-xW-lFF"/>
                     </connections>
                 </controller>

@@ -1,9 +1,11 @@
+import ClockKit
 import WatchKit
 import WatchConnectivity
 import Foundation
 
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
     @IBOutlet var reachabilityStatusLabel: WKInterfaceLabel!
+    @IBOutlet var complicationCountLabel: WKInterfaceLabel!
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -24,6 +26,8 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         if WCSession.isSupported() {
             sessionReachabilityDidChange(WCSession.defaultSession())
         }
+
+        updateActiveComplicationsCount()
     }
 
     override func didDeactivate() {
@@ -41,5 +45,21 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
                 reachabilityStatusLabel.setText("Unreachable")
             }
         }
+    }
+
+    @IBAction func onResetComplicationsTapped() {
+        reloadComplicationTimelines()
+    }
+
+    private func reloadComplicationTimelines() {
+        let complicationServer = CLKComplicationServer.sharedInstance()
+        complicationServer.activeComplications.forEach { (complication) -> Void in
+            complicationServer.reloadTimelineForComplication(complication)
+        }
+    }
+
+    private func updateActiveComplicationsCount() {
+        let countString = "\(CLKComplicationServer.sharedInstance().activeComplications.count)"
+        complicationCountLabel.setText(countString)
     }
 }
